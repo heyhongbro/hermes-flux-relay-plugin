@@ -1,0 +1,44 @@
+# Secrets & local runtime
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.crt
+*.p12
+authorized_devices.json
+account_binding.json
+revoked_devices.json
+last_known_good_catalog.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+dist/
+build/
+
+# Go & Rust sidecar
+bin/
+target/
+*.exe
+*.dll
+*.so
+*.dylib
+coverage.out
+
+# OS & Editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+tmp/
+
+# Local design drafts (never commit)
+docs/design/
+*.design.md
+*.local.md

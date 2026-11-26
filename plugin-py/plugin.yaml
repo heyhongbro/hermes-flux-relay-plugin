@@ -1,0 +1,10 @@
+name: hermes-flux-relay
+version: 0.1.0
+description: Zero-trust E2EE relay tunnel, multi-POP routing, and account pairing plugin for Hermes Gateway
+author: Hermes Flux
+provides_tools: false
+provides_hooks: true
+hooks:
+  - gateway:startup
+  - gateway:shutdown
+entry_point: __init__:register
